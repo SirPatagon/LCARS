@@ -2,14 +2,32 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:controls="using:LCARS.Components">
   <Design.PreviewWith>
-    <controls:TitleBar />
+    <controls:TitleBar Height="250" Width="1200" />
   </Design.PreviewWith>
 
   <Style Selector="controls|TitleBar">
     <!-- Set Defaults -->
     <Setter Property="Template">
       <ControlTemplate>
-        <TextBlock Text="Templated Control" />
+		  <Grid>
+			  <Border Background="#F1DF6F" CornerRadius="150,0,0,0"></Border>
+			  <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top">
+				  <Label Background="Black" Foreground="#FFA50B" 
+						 FontWeight="Bold" FontSize="80" Padding="20,0">
+					  NODE NAME
+				  </Label>
+				  <Grid>
+					  <Border Background="Black" Height="100" Width="100"></Border>
+					  <Border Background="#F1DF6F" Height="100" Width="100"
+							  CornerRadius="0,50,50, 0"
+							  HorizontalAlignment="Right" VerticalAlignment="Top">
+					  </Border>
+				  </Grid>
+			  </StackPanel>
+			  
+			  <Border Background="Black" CornerRadius="50,0,0,0" 
+					  Margin="300, 100, 0 0"></Border>
+		  </Grid>
       </ControlTemplate>
     </Setter>
   </Style>
