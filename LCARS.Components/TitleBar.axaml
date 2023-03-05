@@ -13,8 +13,8 @@
 			  <Border Background="#F1DF6F" CornerRadius="150,0,0,0"></Border>
 			  <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top">
 				  <Label Background="Black" Foreground="#FFA50B" 
-						 FontWeight="Bold" FontSize="80" Padding="20,0">
-					  NODE NAME
+						 FontWeight="Bold" FontSize="80" Padding="20,0"
+						 Content="{TemplateBinding NodeName}">
 				  </Label>
 				  <Grid>
 					  <Border Background="Black" Height="100" Width="100"></Border>
